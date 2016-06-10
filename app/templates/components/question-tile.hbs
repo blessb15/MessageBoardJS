@@ -1,2 +1,7 @@
-<h4>{{question.content}}</h4>
-<h3>-{{question.writer}}</h3>
+<div class="question-box">
+  <h4>{{question.content}}</h4>
+  <h3>-{{question.writer}}</h3>
+  <br>
+  {{update-question question=question update="update"}}
+  <button {{action "delete" question}}>Delete</button>
+</div>

@@ -1,5 +1,4 @@
-{{#if addNewQuestion}}
-  <h1>Ask Something</h1>
+{{#if updateQuestionForm}}
     <div>
       <form>
         <div class="form-group">
@@ -12,9 +11,9 @@
             {{textarea value=content id="content"}}
         </div>
         <br>
-        <button {{action 'save1'}}>Save</button>
+        <button {{action 'update' question}}>Save</button>
       </form>
     </div>
   {{else}}
-    <button {{action 'questionFormShow'}}>New Question</button>
+    <button {{action 'updateFormShow'}}>Update</button>
   {{/if}}
