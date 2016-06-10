@@ -3,3 +3,10 @@
 <h4>{{model.content}}</h4>
 <br>
 <h2 class="question-page">Answers:</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer-tile answer = answer}}</li>
+  {{/each}}
+</ul>
+<br>
+{{new-answer question=model saveAnswer="saveAnswer"}}

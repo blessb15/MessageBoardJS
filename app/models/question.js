@@ -3,6 +3,7 @@ import Model from 'ember-data/model';
 // import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-    writer: DS.attr(),
-    content: DS.attr()
+  writer: DS.attr(),
+  content: DS.attr(),
+  answers: DS.hasMany('answer', { async: true})
 });
