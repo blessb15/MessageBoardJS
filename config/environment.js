@@ -4,8 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'super-rentals',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://super-rentals.firebaseio.com/',     # This should be your own unique Firebase application link!
+    firbase: {
+    apiKey: "AIzaSyAlCUklm3Xg2V5Y-h_rBO3OoKfMLPht854",
+    authDomain: "my-awesome-project-462bf.firebaseapp.com",
+    databaseURL: "https://my-awesome-project-462bf.firebaseio.com",
+    storageBucket: "my-awesome-project-462bf.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
