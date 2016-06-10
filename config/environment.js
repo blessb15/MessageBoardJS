@@ -2,13 +2,13 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-rentals',
+    modulePrefix: 'message-board',
     environment: environment,
-    firbase: {
-    apiKey: "AIzaSyAlCUklm3Xg2V5Y-h_rBO3OoKfMLPht854",
-    authDomain: "my-awesome-project-462bf.firebaseapp.com",
-    databaseURL: "https://my-awesome-project-462bf.firebaseio.com",
-    storageBucket: "my-awesome-project-462bf.appspot.com",
+    firebase: {
+      apiKey: "AIzaSyCoQU_iwkDNN6do1SW8qIjDQ-eH0p9v2TA",
+      authDomain: "message-board-fbe83.firebaseapp.com",
+      databaseURL: "https://message-board-fbe83.firebaseio.com",
+      storageBucket: "message-board-fbe83.appspot.com",
     },
     baseURL: '/',
     locationType: 'auto',
