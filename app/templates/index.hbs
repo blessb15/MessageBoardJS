@@ -1,3 +1,9 @@
 <h1 class="head-content">Welcome to Message Board</h1>
 
+<ul>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+
 {{new-question save2="save3"}}
