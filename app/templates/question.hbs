@@ -1,10 +1,8 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 <h2 class="question-page">Answers:</h2>
-{{question.answer.name}}
-<ul>
   {{#each model.answers as |answer|}}
-    <li>{{question.answer.name}}</li>
+  <h5>{{answer.solution}}</h5>
+  <h3>-{{answer.name}}</h3>
   {{/each}}
-</ul>
 <br>
 {{new-answer question=model saveAnswer="saveAnswer"}}
