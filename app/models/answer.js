@@ -1,6 +1,6 @@
-import Model from 'ember-data/model';
+import Model from 'ember-data';
 
-export default Model.extend({
+export default DS.Model.extend({
   name: DS.attr(),
   answer: DS.attr(),
   question: DS.belongsTo('question', { async: true})

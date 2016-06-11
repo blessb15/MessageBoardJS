@@ -16,11 +16,6 @@ export default Ember.Route.extend({
       Ember.Logger.log(params);
     },
 
-    delete(question) {
-      question.destroyRecord();
-      this.transitionTo('index');
-    },
-
     update(question, params) {
       Object.keys(params).forEach(function(key){
         if(params[key]!==undefined) {

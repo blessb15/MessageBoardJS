@@ -1,7 +1,4 @@
-<h2 class="question-page">{{model.writer}}'s Question:</h2>
-<br>
-<h4>{{model.content}}</h4>
-<br>
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
 <h2 class="question-page">Answers:</h2>
 <ul>
   {{#each model.answers as |answer|}}
