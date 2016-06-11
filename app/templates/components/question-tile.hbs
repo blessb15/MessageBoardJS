@@ -1,8 +1,6 @@
-<div class="question-box">
-  <h4>{{question.content}}</h4>
-  <h3>-{{question.writer}}</h3>
-  <br>
-  {{update-question question=question update="update"}}
-  <br>
-  {{#link-to 'question' question.id}}<button>Add an Answer</button>{{/link-to}}
-</div>
+<h4>{{question.content}}</h4>
+<h3>-{{question.writer}}</h3>
+<br>
+{{update-question question=question update="update"}}
+<br>
+{{#link-to 'question' question.id}}<button>Add an Answer</button>{{/link-to}}

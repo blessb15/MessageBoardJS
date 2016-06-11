@@ -1,11 +1,11 @@
-<h1 class="head-content">Welcome to Message Board</h1>
+<div class="page-content">
+  <ul>
+    {{#each model.questions as |question|}}
+      {{question-tile question=question update="update"}}
+    {{/each}}
+  </ul>
 
-<ul>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question update="update"}}
-  {{/each}}
-</ul>
-
-<div class="center">
-  {{new-question save2="save3"}}
+  <div class="center">
+    {{new-question save2="save3"}}
+  </div>
 </div>
