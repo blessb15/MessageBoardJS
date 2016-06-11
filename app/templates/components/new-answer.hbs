@@ -1,19 +1,15 @@
 {{#if newAnswerForm}}
-
-    <div class="form-content">
-      <form>
-        <div class="form-group">
-          <label for="name">Your Name:</label><br>
-          {{input value=name id="name"}}
-        </div>
-        <div class="form-group">
-          <label for="answer">write here</label><br>
-          {{textarea value=answer id="answer"}}
-        </div>
-
-        <button {{action 'saveAnswer'}}>Add</button>
-      </form>
+  <form>
+    <div class="form-group">
+      <label for="name">Your Name:</label><br>
+      {{input value=name id="name"}}
     </div>
+    <div class="form-group">
+      <label for="answer">write here</label><br>
+      {{textarea value=answer id="answer"}}
+    </div>
+    <button {{action 'saveAnswer'}}>Add</button>
+  </form>
 {{else}}
-    <button {{action 'answerFormShow'}}>Add Answer</button>
+    <button {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}

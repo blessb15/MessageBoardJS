@@ -1,0 +1,14 @@
+{
+  "questions" : {
+    "0" : {
+      "answer" : "blue",
+      "content" : "whats your favorite color?",
+      "writer" : "Bill"
+    },
+    "1" : {
+      "answer" : "cheese",
+      "content" : "whats your favorite food?",
+      "writer" : "Bob"
+    }
+  }
+}

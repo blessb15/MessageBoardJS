@@ -1,8 +1,9 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 <h2 class="question-page">Answers:</h2>
+{{question.answer.name}}
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer-tile answer = answer}}</li>
+    <li>{{question.answer.name}}</li>
   {{/each}}
 </ul>
 <br>
