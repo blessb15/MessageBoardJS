@@ -1,6 +1,6 @@
-<h4>{{question.content}}</h4>
-<h3>-{{question.writer}}</h3>
+<h4 class="center">{{question.content}}</h4>
+<h3 class="center">-{{question.writer}}</h3>
 <br>
-{{update-question question=question update="update"}}
+<center>{{update-question question=question update="update"}}</center>
 <br>
-{{#link-to 'question' question.id}}<button>Add an Answer</button>{{/link-to}}
+<center>{{#link-to 'question' question.id}} Answers({{question.answers.length}}) {{/link-to}} {{question-pop question}}</center>
