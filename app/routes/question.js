@@ -8,21 +8,6 @@ export default Ember.Route.extend({
 
   actions: {
 
-    // likeIt(answer){
-    //   console.log(answer.name);
-    //   var likes = parseInt(answer.like);
-    //   console.log(likes);
-    //   likes++;
-    // },
-
-    likeIt(answer) {
-      console.log(answer.like);
-      answer.like ++;
-      console.log(answer.like)
-      answer.save();
-
-    },
-
     saveAnswer(params){
       console.log(params)
       var newAnswer = this.store.createRecord('answer', params);

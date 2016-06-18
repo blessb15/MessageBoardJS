@@ -2,14 +2,13 @@
   {{question-detail question=model destroyQuestion="destroyQuestion"}}
   <h2 class="question-page">Answers:</h2>
     {{#each model.answers as |answer|}}
-    <div class="answer-tile col-md-3">
+    <div class="answer-tile col-md-4">
       <h5>{{answer.solution}}</h5>
       <h3>-{{answer.name}}</h3>
-      {{log answer.name}}
-      <h4 class="like" {{action 'likeIt' answer}}>&#9650;</h4>
-      <h4 class="dislike" {{action 'dislikeIt' answer}}>&#9660;</h4>
-      <!-- {{answer-like answer=answer}} -->
     </div>
     {{/each}}
+    </div>
+    <br>
+    <div class="center">
   {{new-answer question=model saveAnswer="saveAnswer"}}
 </div>
