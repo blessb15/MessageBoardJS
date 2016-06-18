@@ -25,15 +25,16 @@ a:link{
 .question-tile{
   background-color: lightgray;
   border-radius: 25px;
-  margin: 2px;
-  padding: 10px;
+  /*margin: 2px;
+  padding: 10px;*/
 }
 
 .answer-tile{
   background-color: lightgray;
   border-radius: 25px;
-  margin: 2px;
-  padding: 10px;
+  /*margin-left: 2px;
+  margin-right: 2px;*/
+  /*padding: 10px;*/
 }
 
 .like{
