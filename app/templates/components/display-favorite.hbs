@@ -1,0 +1,4 @@
+  {{#each favoriteQuestion.favorites as |favorite|}}
+    <h5><button class="btn btn-danger" {{action 'remove' favorite}}>-</button>{{favorite.content}}, -{{favorite.writer}}</h5>
+    <br>
+  {{/each}}

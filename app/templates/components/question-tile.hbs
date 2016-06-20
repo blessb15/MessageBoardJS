@@ -3,5 +3,9 @@
 <br>
 <center>{{update-question question=question update="update"}}</center>
 <br>
+<button class="btn btn-default" {{action "addToFavorites" question}}>Add to Favorites</button>
+<br>
+<br>
 <center>{{#link-to 'question' question.id}} Answers({{question.answers.length}}) {{/link-to}} {{question-pop question}}</center>
+
 <br>

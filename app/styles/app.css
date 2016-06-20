@@ -25,6 +25,8 @@ a:link{
 .question-tile{
   background-color: lightgray;
   border-radius: 25px;
+  padding-top: 10px;
+  margin-bottom: 20px;
   /*margin: 2px;
   padding: 10px;*/
 }
@@ -47,4 +49,8 @@ a:link{
 
 .glyphicon{
   color: red;
+}
+
+li {
+  list-style: none;
 }
